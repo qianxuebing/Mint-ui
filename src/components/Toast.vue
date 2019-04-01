@@ -1,5 +1,6 @@
 <template>
   <div class="toast">
+    <gheader :examplename="examplename"></gheader>
     <ul>
       <li>
         <mt-button
@@ -29,6 +30,11 @@
 <script>
 export default {
   name: 'Toast',
+  data () {
+    return {
+      examplename: 'Toast'
+    }
+  },
   methods: {
     DefaultToast () {
       this.$toast('默认Toast')

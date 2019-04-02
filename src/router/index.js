@@ -6,7 +6,8 @@ import GFooter from '@/components/GlobalFooter'
 import Toast from '@/components/Toast'
 import Indicator from '@/components/Indicator'
 import Navbar from '@/components/Navbar'
-import Button from  '@/components/Button'
+import Button from '@/components/Button'
+import Swipe from '@/components/Swipe'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -16,6 +17,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Swipe',
+      component: Swipe
+    },
+    {
+      path: '/Button',
       name: 'Button',
       component: Button
     },

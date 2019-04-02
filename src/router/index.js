@@ -6,6 +6,7 @@ import GFooter from '@/components/GlobalFooter'
 import Toast from '@/components/Toast'
 import Indicator from '@/components/Indicator'
 import Navbar from '@/components/Navbar'
+import Button from  '@/components/Button'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -15,6 +16,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Button',
+      component: Button
+    },
+    {
+      path: '/Navbar',
       name: 'Navbar',
       component: Navbar
     },

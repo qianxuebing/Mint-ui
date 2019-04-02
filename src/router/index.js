@@ -5,6 +5,7 @@ import GHeader from '@/components/GlobalHeader'
 import GFooter from '@/components/GlobalFooter'
 import Toast from '@/components/Toast'
 import Indicator from '@/components/Indicator'
+import Navbar from '@/components/Navbar'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -14,6 +15,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Navbar',
+      component: Navbar
+    },
+    {
+      path: '/Indicator',
       name: 'Indicator',
       component: Indicator
     },

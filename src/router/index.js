@@ -8,6 +8,7 @@ import Indicator from '@/components/Indicator'
 import Navbar from '@/components/Navbar'
 import Button from '@/components/Button'
 import Swipe from '@/components/Swipe'
+import Radio from '@/components/Radio'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -17,6 +18,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Radio',
+      component: Radio
+    },
+    {
+      path: '/Swipe',
       name: 'Swipe',
       component: Swipe
     },

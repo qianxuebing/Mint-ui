@@ -12,6 +12,7 @@ import Radio from '@/components/Radio'
 import Checklist from '@/components/Checklist'
 import Field from '@/components/Field'
 import Switch from '@/components/Switch'
+import Lazyload from '@/components/Lazyload'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -21,6 +22,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Lazyload',
+      component: Lazyload
+    },
+    {
+      path: '/Switch',
       name: 'Switch',
       component: Switch
     },

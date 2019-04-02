@@ -11,6 +11,7 @@ import Swipe from '@/components/Swipe'
 import Radio from '@/components/Radio'
 import Checklist from '@/components/Checklist'
 import Field from '@/components/Field'
+import Switch from '@/components/Switch'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -20,6 +21,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Switch',
+      component: Switch
+    },
+    {
+      path: '/Field',
       name: 'Field',
       component: Field
     },

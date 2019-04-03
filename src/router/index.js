@@ -22,7 +22,7 @@ Vue.component('gfooter', GFooter)
 export default new Router({
   routes: [
     {
-      path: '/Search',
+      path: '/',
       name: 'Search',
       component: Search
     },
@@ -72,7 +72,7 @@ export default new Router({
       component: Indicator
     },
     {
-      path: '/',
+      path: '/Toast',
       name: 'Toast',
       component: Toast
     }

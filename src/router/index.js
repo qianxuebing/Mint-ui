@@ -16,6 +16,7 @@ import Lazyload from '@/components/Lazyload'
 import Search from '@/components/Search'
 import MessageBox from '@/components/MessageBox'
 import DateTimePicker from '@/components/DateTimePicker'
+import Picker from '@/components/Picker'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -25,6 +26,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Picker',
+      component: Picker
+    },
+    {
+      path: '/DateTimePicker',
       name: 'DateTimePicker',
       component: DateTimePicker
     },

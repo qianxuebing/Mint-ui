@@ -14,6 +14,7 @@ import Field from '@/components/Field'
 import Switch from '@/components/Switch'
 import Lazyload from '@/components/Lazyload'
 import Search from '@/components/Search'
+import MessageBox from '@/components/MessageBox'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -23,6 +24,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'MessageBox',
+      component: MessageBox
+    },
+    {
+      path: '/Search',
       name: 'Search',
       component: Search
     },

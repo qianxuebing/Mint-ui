@@ -8,6 +8,8 @@ import 'mint-ui/lib/style.css'
 import './assets/css/font-awesome.css'
 import './assets/css/indexicon.css'
 import './assets/css/globle.css'
+import './assets/css/border.css'
+import 'lib-flexible'
 
 Vue.config.productionTip = false
 Vue.use(MintUI)

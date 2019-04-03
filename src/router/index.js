@@ -13,6 +13,7 @@ import Checklist from '@/components/Checklist'
 import Field from '@/components/Field'
 import Switch from '@/components/Switch'
 import Lazyload from '@/components/Lazyload'
+import Search from '@/components/Search'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -21,7 +22,12 @@ Vue.component('gfooter', GFooter)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/Search',
+      name: 'Search',
+      component: Search
+    },
+    {
+      path: '/Lazyload',
       name: 'Lazyload',
       component: Lazyload
     },
@@ -66,7 +72,7 @@ export default new Router({
       component: Indicator
     },
     {
-      path: '/Toast',
+      path: '/',
       name: 'Toast',
       component: Toast
     }

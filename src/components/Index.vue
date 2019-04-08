@@ -61,6 +61,9 @@ export default {
         }, {
           link: 'Popup',
           title: 'Popup'
+        }, {
+          link: 'Progress',
+          title: 'Progress'
         }
       ]
     }
@@ -68,12 +71,7 @@ export default {
 }
 </script>
 
-<style lang="less">
-  .mint-cell-wrapper{
-    height: 60px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-  }
+<style lang="less" scoped>
   .index-wrap{
     padding: 15px;
   }

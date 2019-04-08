@@ -17,6 +17,7 @@ import Search from '@/components/Search'
 import MessageBox from '@/components/MessageBox'
 import DateTimePicker from '@/components/DateTimePicker'
 import Picker from '@/components/Picker'
+import Index from '@/components/Index'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -26,6 +27,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Index',
+      component: Index
+    },
+    {
+      path: '/Picker',
       name: 'Picker',
       component: Picker
     },

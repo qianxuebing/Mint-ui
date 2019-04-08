@@ -12,14 +12,16 @@
       <li>
         <mt-button
           size="large"
-          @click="IconToast">
+          @click="IconToast"
+          type="primary">
           带icon的Toast
         </mt-button>
       </li>
       <li>
         <mt-button
           size="large"
-          @click="PositionToast">
+          @click="PositionToast"
+          type="danger">
           自定义位置Toast
         </mt-button>
       </li>

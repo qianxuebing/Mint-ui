@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import GHeader from '@/components/GlobalHeader'
 import GFooter from '@/components/GlobalFooter'
+import Index from '@/components/Index'
 import Toast from '@/components/Toast'
 import Indicator from '@/components/Indicator'
 import Navbar from '@/components/Navbar'
@@ -17,7 +18,7 @@ import Search from '@/components/Search'
 import MessageBox from '@/components/MessageBox'
 import DateTimePicker from '@/components/DateTimePicker'
 import Picker from '@/components/Picker'
-import Index from '@/components/Index'
+import Popup from '@/components/Popup'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -29,6 +30,10 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    }, {
+      path: '/Popup',
+      name: 'Popup',
+      component: Popup
     },
     {
       path: '/Picker',

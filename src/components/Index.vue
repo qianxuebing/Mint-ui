@@ -58,6 +58,9 @@ export default {
         }, {
           link: 'Picker',
           title: 'Picker'
+        }, {
+          link: 'Popup',
+          title: 'Popup'
         }
       ]
     }

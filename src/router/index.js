@@ -20,6 +20,7 @@ import DateTimePicker from '@/components/DateTimePicker'
 import Picker from '@/components/Picker'
 import Popup from '@/components/Popup'
 import Progress from '@/components/Progress'
+import Spinner from '@/components/Spinner'
 
 Vue.use(Router)
 Vue.component('gheader', GHeader)
@@ -31,11 +32,18 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
-    }, {
+    },
+    {
+      path: '/Spinner',
+      name: 'Spinner',
+      component: Spinner
+    },
+    {
       path: '/Progress',
       name: 'Progress',
       component: Progress
-    }, {
+    },
+    {
       path: '/Popup',
       name: 'Popup',
       component: Popup

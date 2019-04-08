@@ -64,6 +64,9 @@ export default {
         }, {
           link: 'Progress',
           title: 'Progress'
+        }, {
+          link: 'Spinner',
+          title: 'Spinner'
         }
       ]
     }

@@ -50,8 +50,8 @@ export default {
     }
   },
   watch: {
-    value(val) {
-      if (val >= 100){
+    value (val) {
+      if (val >= 100) {
         this.uploading = false
         this.progressVisible = false
         setTimeout(() => {
@@ -61,7 +61,7 @@ export default {
             duration: 1000
           })
         }, 200)
-        clearTimeout(this.timer);
+        clearTimeout(this.timer)
       }
     }
   },
